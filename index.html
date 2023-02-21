@@ -3,10 +3,26 @@
   <head>
     <title>ROMAR10</title>
     <meta charset="UTF-8">
+    <style type="text/css">
+    .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+  </style>
   </head>
   <body>
+    <div class="videoWrapper">
     <video controls autoplay muted>
         <source src="AMG2.mp4" type="video/mp4">
-      </video>
+    </video>
+  </div>
   </body>
 </html>
